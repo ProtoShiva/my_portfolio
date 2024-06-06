@@ -3,7 +3,10 @@ import { CONTACT } from "../constants"
 import { motion } from "framer-motion"
 const Contact = () => {
   return (
-    <div className="border-b border-neutral-900 pb-20">
+    <div
+      id="contact"
+      className="border-b border-neutral-900 pb-20 dark:text-white text-slate-900 "
+    >
       <motion.h1
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
@@ -17,7 +20,7 @@ const Contact = () => {
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: -100 }}
           transition={{ duration: 1 }}
-          className="my-4"
+          className="my-4 dark:text-white text-slate-900 "
         >
           {CONTACT.address}
         </motion.p>
@@ -25,11 +28,11 @@ const Contact = () => {
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: 100 }}
           transition={{ duration: 1 }}
-          className="my-4"
+          className="my-4 dark:text-white text-slate-900 "
         >
           {CONTACT.phoneNo}
         </motion.p>
-        <a href="#" className="border-b">
+        <a href="#" className="border-b dark:text-white text-slate-900 ">
           {CONTACT.email}
         </a>
       </div>

@@ -21,23 +21,31 @@ const Hero = () => {
               variants={container(0)}
               initial="hidden"
               animate="visible"
-              className="pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-8xl"
+              className="pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-8xl text-slate-900  dark:text-white"
             >
               Himanshu Gusain
             </motion.h1>
-            <motion.span
-              variants={container(0.5)}
-              initial="hidden"
-              animate="visible"
-              className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent"
-            >
-              Full Stack Developer
-            </motion.span>
+            <div className="flex items-center">
+              <motion.span
+                variants={container(0.5)}
+                initial="hidden"
+                animate="visible"
+                className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent inline"
+              >
+                Full Stack Developer
+              </motion.span>
+              <a download>
+                <button className="ml-3 p-4 w-28 bg-red-500 border-solid rounded-md transition duration-200 ease-in-out transform hover:scale-105 active:scale-95 focus:outline-none text-xl">
+                  Resume
+                </button>
+              </a>
+            </div>
+
             <motion.p
               variants={container(1)}
               initial="hidden"
               animate="visible"
-              className="my-2 max-w-xl py-6 font-light tracking-tighter"
+              className="my-2 max-w-xl py-6 font-light text-2xl tracking-tighter text-slate-900 cursor-pointer dark:text-white"
             >
               {HERO_CONTENT}
             </motion.p>
