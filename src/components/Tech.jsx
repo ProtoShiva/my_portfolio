@@ -2,9 +2,11 @@ import React from "react"
 import { RiReactjsLine } from "react-icons/ri"
 import { FaNodeJs } from "react-icons/fa"
 import { SiMongodb } from "react-icons/si"
-import { BiLogoPostgresql } from "react-icons/bi"
+import { SiRedux } from "react-icons/si"
 import { SiPostman } from "react-icons/si"
 import { SiJavascript } from "react-icons/si"
+import { FaStripe } from "react-icons/fa"
+import { SiTailwindcss } from "react-icons/si"
 import { motion } from "framer-motion"
 
 const iconVariants = (duration) => ({
@@ -62,12 +64,20 @@ const Tech = () => {
           <SiMongodb className="text-7xl text-green-500" />
         </motion.div>
         <motion.div
+          variants={iconVariants(8)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <SiTailwindcss className="text-7xl text-sky-500" />
+        </motion.div>
+        <motion.div
           variants={iconVariants(6)}
           initial="initial"
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <BiLogoPostgresql className="text-7xl text-sky-700" />
+          <SiRedux className="text-7xl text-[#764abc]" />
         </motion.div>
         <motion.div
           variants={iconVariants(3)}
@@ -84,6 +94,14 @@ const Tech = () => {
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
           <SiJavascript className="text-7xl text-yellow-400" />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(4.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <FaStripe className="text-7xl text-blue-500" />
         </motion.div>
       </motion.div>
     </div>

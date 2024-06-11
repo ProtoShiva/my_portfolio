@@ -1,6 +1,8 @@
 import React from "react"
 import { CONTACT } from "../constants"
 import { motion } from "framer-motion"
+import { BsTelephoneFill } from "react-icons/bs"
+import { IoLogoWhatsapp } from "react-icons/io"
 const Contact = () => {
   return (
     <div
@@ -28,10 +30,22 @@ const Contact = () => {
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: 100 }}
           transition={{ duration: 1 }}
-          className="my-4 dark:text-white text-slate-900 "
+          className="my-4 dark:text-white text-slate-900 flex justify-center items-center gap-2  "
         >
+          <BsTelephoneFill className="dark:text-white text-black text-xl" />
           {CONTACT.phoneNo}
         </motion.p>
+
+        <motion.p
+          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, x: 100 }}
+          transition={{ duration: 1 }}
+          className="my-4 dark:text-white text-slate-900 flex justify-center items-center gap-2 "
+        >
+          <IoLogoWhatsapp className="text-xl dark:text-white text-black" />
+          {CONTACT.Whatsapp}
+        </motion.p>
+
         <a href="#" className="border-b dark:text-white text-slate-900 ">
           {CONTACT.email}
         </a>

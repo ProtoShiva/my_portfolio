@@ -1,5 +1,6 @@
 import React from "react"
 import { EXPERIENCES } from "../constants"
+import intern from "../assets/Cuvette Fullstack Development Certificate - Himanshu Gusain.pdf"
 import { motion } from "framer-motion"
 
 const Experience = () => {
@@ -36,6 +37,9 @@ const Experience = () => {
                 {exp.role} -{" "}
                 <span className="text-sm text-purple-100">{exp.company}</span>
               </h6>
+              <a className="text-blue-600" href={intern} download>
+                certificate
+              </a>
               <p className="mb-4 text-neutral-600 dark:text-neutral-400">
                 {exp.description}
               </p>

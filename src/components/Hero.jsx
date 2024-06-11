@@ -1,6 +1,8 @@
 import React from "react"
 import { HERO_CONTENT } from "../constants"
-import profilePic from "../assets/kevinRushProfile.png"
+import profilePic from "../assets/himuPic.jpg"
+import CV from "../assets/Resume_Himanshu_Gusain.pdf"
+
 import { motion } from "framer-motion"
 
 const container = (delay) => ({
@@ -21,10 +23,28 @@ const Hero = () => {
               variants={container(0)}
               initial="hidden"
               animate="visible"
-              className="pb-16 text-6xl font-thin tracking-tight lg:mt-16 lg:text-8xl text-slate-900  dark:text-white"
+              className="pb-6 text-6xl font-thin tracking-tight lg:mt-16 lg:text-8xl text-slate-900  dark:text-white"
             >
               Himanshu Gusain
             </motion.h1>
+            <motion.div
+              variants={container(1)}
+              initial="hidden"
+              animate="visible"
+              className="flex  items-center gap-10 mb-5"
+            >
+              <img
+                src={profilePic}
+                alt="photo"
+                className="size-24 object-cover rounded-full"
+              />
+              <a href={CV} download>
+                <button className="ml-3 p-4 w-28 bg-red-500 border-solid rounded-md transition duration-200 ease-in-out transform hover:scale-105 active:scale-95 focus:outline-none text-xl">
+                  Resume
+                </button>
+              </a>
+            </motion.div>
+
             <div className="flex items-center">
               <motion.span
                 variants={container(0.5)}
@@ -34,32 +54,16 @@ const Hero = () => {
               >
                 Full Stack Developer
               </motion.span>
-              <a download>
-                <button className="ml-3 p-4 w-28 bg-red-500 border-solid rounded-md transition duration-200 ease-in-out transform hover:scale-105 active:scale-95 focus:outline-none text-xl">
-                  Resume
-                </button>
-              </a>
             </div>
 
             <motion.p
               variants={container(1)}
               initial="hidden"
               animate="visible"
-              className="my-2 max-w-xl py-6 font-light text-2xl tracking-tighter text-slate-900 cursor-pointer dark:text-white"
+              className="my-2 max-w-xl py-6 font-light text-xl tracking-tighter text-slate-900 cursor-pointer dark:text-white"
             >
               {HERO_CONTENT}
             </motion.p>
-          </div>
-        </div>
-        <div className="w-full lg:w-1/2 lg:p-8">
-          <div className="flex justify-center">
-            <motion.img
-              initial={{ x: 100, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 1, delay: 1.2 }}
-              src={profilePic}
-              alt="Himanshu"
-            />
           </div>
         </div>
       </div>

@@ -11,13 +11,13 @@ import { GoSun } from "react-icons/go"
 import { useTheme } from "../hooks"
 
 const Navbar = () => {
-  const [sun, setSun] = useState(false)
+  const [sun, setSun] = useState(true)
   const { toggleTheme } = useTheme()
   const scrollToDiv = (id) => {
     document.getElementById(id).scrollIntoView({ behavior: "smooth" })
   }
   return (
-    <nav className="mb-20 flex items-center justify-between py-6">
+    <nav className="flex items-center justify-between py-2">
       <div className="flex flex-shrink-0 items-center m-8 h-[4rem]">
         <img
           className="mx-2 w-10 transition duration-300 transform hover:scale-125 cursor-pointer hidden dark:block  "
@@ -84,12 +84,21 @@ const Navbar = () => {
             <IoMoon className="dark:text-white" />
           )}
         </div>
+        <a href="">
+          <FaLinkedin className="transition duration-300 transform hover:scale-125 cursor-pointer  hover:text-blue-600 dark:text-white text-black" />
+        </a>
 
-        <FaLinkedin className="transition duration-300 transform hover:scale-125 cursor-pointer  hover:text-blue-600 dark:text-white text-black" />
-
-        <FaGithub className="transition duration-300 transform hover:scale-125 cursor-pointer dark:text-white text-black" />
-        <FaInstagram className="transition duration-300 transform hover:scale-125 cursor-pointer  hover:text-pink-600 dark:text-white text-black" />
-        <FaSquareXTwitter className="transition duration-300 transform hover:scale-125 cursor-pointer dark:text-white text-black" />
+        <a href="https://github.com/ProtoShiva" target="_blank">
+          <FaGithub className="transition duration-300 transform hover:scale-125 cursor-pointer dark:text-white text-black" />
+        </a>
+        <a href="https://www.instagram.com/professor9084/" target="_blank">
+          {" "}
+          <FaInstagram className="transition duration-300 transform hover:scale-125 cursor-pointer  hover:text-pink-600 dark:text-white text-black" />
+        </a>
+        <a href="https://twitter.com/HimanshuGusain8" target="_blank">
+          {" "}
+          <FaSquareXTwitter className="transition duration-300 transform hover:scale-125 cursor-pointer dark:text-white text-black" />
+        </a>
       </div>
     </nav>
   )

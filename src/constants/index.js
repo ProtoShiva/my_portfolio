@@ -1,76 +1,54 @@
-import project1 from "../assets/projects/project-1.jpg"
-import project2 from "../assets/projects/project-2.jpg"
-import project3 from "../assets/projects/project-3.jpg"
-import project4 from "../assets/projects/project-4.jpg"
+import project1 from "../assets/projects/project-1.png"
+import project2 from "../assets/projects/project-2.png"
+import project3 from "../assets/projects/project-3.png"
 
-export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`
+export const HERO_CONTENT = `I am a passionate MERN stack developer with 6-7 months of focused learning and a 6-month online internship where I built industry-standard applications. My hands-on experience has honed my problem-solving skills and deepened my understanding of full-stack development. Eager to learn and grow, I am committed to reaching the pinnacle of this field. With my dedication and team-oriented approach, I am confident I can be a valuable asset to your company, contributing to real-life problem-solving applications and continuous improvement.`
 
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`
+export const ABOUT_TEXT = `I am a Computer Science engineer who graduated in 2022. After graduation, I pursued a different path by preparing for the armed forces, successfully qualifying the written examinations of CDS twice and AFCAT three times, and attending eight SSB interviews. Although I didn't achieve the desired outcome, these experiences built my resilience and determination. Now, I have transitioned back to the tech field, equipped with new skills in MERN stack development and a strong self-confidence. I am eager to grow as a developer, creating impactful applications for users and continually improving in this dynamic industry.`
 
 export const EXPERIENCES = [
   {
-    year: "2023 - Present",
-    role: "Senior Full Stack Developer",
-    company: "Google Inc.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"]
-  },
-  {
-    year: "2022 - 2023",
-    role: "Frontend Developer",
-    company: "Adobe",
-    description: `Designed and developed user interfaces for web applications using Next.js and React. Worked closely with backend developers to integrate frontend components with Node.js APIs. Implemented responsive designs and optimized frontend performance.`,
-    technologies: ["HTML", "CSS", "Vue.js", "mySQL"]
-  },
-  {
-    year: "2021 - 2022",
-    role: "Full Stack Developer",
-    company: "Facebook",
-    description: `Developed and maintained web applications using JavaScript, React.js, and Node.js. Designed and implemented RESTful APIs for data communication. Collaborated with cross-functional teams to deliver high-quality software products on schedule.`,
-    technologies: ["Python", "Svelte", "Three.js", "Postgres"]
-  },
-  {
-    year: "2020 - 2021",
-    role: "Software Engineer",
-    company: "Paypal",
-    description: `Contributed to the development of web applications using JavaScript, React.js, and Node.js. Managed databases and implemented data storage solutions using MongoDB. Worked closely with product managers to prioritize features and enhancements.`,
-    technologies: ["Ruby", "Rails", "PHP", "Sqlite"]
+    year: "25 Aug 2023 - April 2024",
+    role: "Full Stack Developer Intern",
+    company: "Cuvette Tech Pvt. Ltd.",
+    description: `Gained hands-on experience with the MERN stack by working on industry-standard projects. Collaborating with a UX/UI designer who provided designs in Figma, I brought these designs to life through code. This challenging process significantly enhanced my skills, particularly in creating bug-free, robust applications. Each project was rigorously evaluated, and I successfully passed by delivering high-quality work, demonstrating my readiness for a Junior Full Stack Engineer role.`,
+    technologies: ["MongoDB", "Express", "React.js", "Node.js"]
   }
 ]
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
+    title: "Movie App",
     image: project1,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"]
+      "The ultimate movie review and recommendation platform built using the MERN stack! With our app, you can: Review Movies Get Recommendations Create a Watchlist Access Detailed Information. An admin panel with a robust dashboard to upload movie information, manage trailers, and oversee all app details",
+    technologies: ["React", "Node.js", "MongoDB", "Cloudinary"],
+    source: "https://github.com/ProtoShiva/MERN-CinePhiles",
+    live: "https://mern-cine-philes.vercel.app/"
   },
   {
     title: "Task Management App",
     image: project2,
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"]
+      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking. Also you can share the task progress to your team members",
+    technologies: ["MongoDB", "Express", "React", "Node.js"],
+    source: "https://github.com/ProtoShiva/final-task-manager",
+    live: "https://final-task-manager.vercel.app/"
   },
   {
-    title: "Portfolio Website",
+    title: "Ecommerce SaaS",
     image: project3,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"]
-  },
-  {
-    title: "Blogging Platform",
-    image: project4,
-    description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"]
+      "An application for Ecommerce websites to let them select the trending products for their website. An hassle-free way to get the info about the products. User can download images, videos, description, adcopies for their product and sell them easily in any platform they want ",
+    technologies: ["MongoDB", "Express", "React", "Node.js", "Redux", "Stripe"],
+    source: "https://github.com/ProtoShiva/TrendSpot-Frontend",
+    live: "https://trendspot4.netlify.app/"
   }
 ]
 
 export const CONTACT = {
   address: "236/1 Gurudwara Colony, Clementtown, Dehradun 248002 ",
   phoneNo: "+91 8279950566 ",
+  Whatsapp: "+91 8126055391",
   email: "hgusain088@gmail.com"
 }
