@@ -84,7 +84,10 @@ const Navbar = () => {
             <IoMoon className="dark:text-white" />
           )}
         </div>
-        <a href="">
+        <a
+          href="https://www.linkedin.com/in/himanshu-gusain-b308b5312/"
+          target="_blank"
+        >
           <FaLinkedin className="transition duration-300 transform hover:scale-125 cursor-pointer  hover:text-blue-600 dark:text-white text-black" />
         </a>
 
