@@ -1,7 +1,7 @@
 import React from "react"
 import { HERO_CONTENT } from "../constants"
 import profilePic from "../assets/himuPic.jpg"
-import CV from "../assets/Resume_Himanshu_Gusain.pdf"
+import CV from "../assets/NSUT_TnP_Resume.pdf"
 
 import { motion } from "framer-motion"
 
