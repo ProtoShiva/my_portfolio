@@ -1,6 +1,7 @@
 import project1 from "../assets/projects/project-1.png"
 import project2 from "../assets/projects/project-2.png"
 import project3 from "../assets/projects/project-3.png"
+import project4 from "../assets/projects/project-4.png"
 
 export const HERO_CONTENT = `I am a passionate MERN stack developer with 6-7 months of focused learning and a 6-month online internship where I built industry-standard applications. My hands-on experience has honed my problem-solving skills and deepened my understanding of full-stack development. Eager to learn and grow, I am committed to reaching the pinnacle of this field. With my dedication and team-oriented approach, I am confident I can be a valuable asset to your company, contributing to real-life problem-solving applications and continuous improvement.`
 
@@ -43,6 +44,22 @@ export const PROJECTS = [
     technologies: ["MongoDB", "Express", "React", "Node.js", "Redux", "Stripe"],
     source: "https://github.com/ProtoShiva/TrendSpot-Frontend",
     live: "https://trendspot4.netlify.app/"
+  },
+  {
+    title: "Pals-Chat App",
+    image: project4,
+    description:
+      "A real time chat app to connect with your friends using Socket.io. User can Chat with multiple people. A seprate Group can be created for pals to plan an activity. Friends can send DMs to another person",
+    technologies: [
+      "Express",
+      "HTML",
+      "Node.js",
+      "CSS",
+      "JavaScript",
+      "Socket.io"
+    ],
+    source: "https://github.com/ProtoShiva/Pals",
+    live: "https://github.com/ProtoShiva/Pals"
   }
 ]
 

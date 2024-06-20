@@ -7,6 +7,7 @@ import { SiPostman } from "react-icons/si"
 import { SiJavascript } from "react-icons/si"
 import { FaStripe } from "react-icons/fa"
 import { SiTailwindcss } from "react-icons/si"
+import { SiSocketdotio } from "react-icons/si"
 import { motion } from "framer-motion"
 
 const iconVariants = (duration) => ({
@@ -95,6 +96,15 @@ const Tech = () => {
         >
           <SiJavascript className="text-7xl text-yellow-400" />
         </motion.div>
+        <motion.div
+          variants={iconVariants(4.5)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
+          <SiSocketdotio className="text-7xl text-black" />
+        </motion.div>
+
         <motion.div
           variants={iconVariants(4.5)}
           initial="initial"
