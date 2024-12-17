@@ -19,13 +19,14 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "Movie App",
+    title: "Netflix-Gemini",
     image: project1,
     description:
-      "The ultimate movie review and recommendation platform built using the MERN stack! With our app, you can: Review Movies Get Recommendations Create a Watchlist Access Detailed Information. An admin panel with a robust dashboard to upload movie information, manage trailers, and oversee all app details",
-    technologies: ["React", "Node.js", "MongoDB", "Cloudinary"],
-    source: "https://github.com/ProtoShiva/MERN-CinePhiles",
-    live: "https://mern-cine-philes.vercel.app/"
+      "Developed a dynamic movie browsing and recommendation platform for an engaging user interface and seamless navigation.Integrated data management with Redux Toolkit to streamline state handling and improve performance.Leveraged the TMDB API to fetch data and the Gemini API to provide movie recommendations based on user descriptions.
+",
+    technologies: ["React", "Redux-toolkit", "Gemini API", "Firebase"],
+    source: "https://github.com/ProtoShiva/Netflix-gemini",
+    live: "https://netflix-gemini.onrender.com"
   },
   {
     title: "Task Management App",
@@ -35,32 +36,8 @@ export const PROJECTS = [
     technologies: ["MongoDB", "Express", "React", "Node.js"],
     source: "https://github.com/ProtoShiva/final-task-manager",
     live: "https://final-task-manager.vercel.app/"
-  },
-  {
-    title: "Ecommerce SaaS",
-    image: project3,
-    description:
-      "An application for Ecommerce websites to let them select the trending products for their website. An hassle-free way to get the info about the products. User can download images, videos, description, adcopies for their product and sell them easily in any platform they want ",
-    technologies: ["MongoDB", "Express", "React", "Node.js", "Redux", "Stripe"],
-    source: "https://github.com/ProtoShiva/TrendSpot-Frontend",
-    live: "https://trendspot4.netlify.app/"
-  },
-  {
-    title: "Pals-Chat App",
-    image: project4,
-    description:
-      "A real time chat app to connect with your friends using Socket.io. User can Chat with multiple people. A seprate Group can be created for pals to plan an activity. Friends can send DMs to another person",
-    technologies: [
-      "Express",
-      "HTML",
-      "Node.js",
-      "CSS",
-      "JavaScript",
-      "Socket.io"
-    ],
-    source: "https://github.com/ProtoShiva/Pals",
-    live: "https://github.com/ProtoShiva/Pals"
   }
+
 ]
 
 export const CONTACT = {
